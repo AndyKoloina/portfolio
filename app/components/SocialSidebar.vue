@@ -1,5 +1,5 @@
 <template>
-  <div class="fixed right-6 md:right-10 top-1/2 -translate-y-1/2 z-50 flex flex-col gap-6 items-center hidden sm:flex">
+  <div class="fixed right-6 md:right-10 top-1/2 -translate-y-1/2 z-50 flex flex-col gap-6 items-center hidden md:flex">
     
     <a href="https://github.com/AndyKoloina" target="_blank" @mousedown="createRipple" class="social-btn relative overflow-hidden w-12 h-12 flex items-center justify-center rounded-full transition-all duration-300 pointer-events-auto" style="color:#8892b0;" onmouseover="this.style.color='#64FFDA'; this.style.transform='translateY(-4px)'" onmouseout="this.style.color='#8892b0'; this.style.transform='translateY(0)'">
       <Github class="w-5 h-5 pointer-events-none" />
