@@ -1,0 +1,80 @@
+/* ==================================
+   Global Styles — Portfolio Andy Ranaivo
+   ================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Fira+Code:wght@400;500&display=swap');
+
+:root {
+  --color-bg: #060e1a;
+  --color-bg-card: #0a1628;
+  --color-teal: #64FFDA;
+  --color-text: #a8b2d8;
+  --color-text-light: #ccd6f6;
+}
+
+html, body {
+  background-color: var(--color-bg) !important;
+  color: var(--color-text);
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Ensure Tailwind dark bg classes even if JIT misses them */
+.bg-navy-950 { background-color: #060e1a !important; }
+.bg-navy-900 { background-color: #0a1628 !important; }
+.bg-navy-800 { background-color: #0d1b2a !important; }
+.text-teal    { color: #64FFDA !important; }
+.border-teal  { border-color: #64FFDA !important; }
+.text-slate-400 { color: #8892b0; }
+.text-slate-300 { color: #a8b2d8; }
+.text-slate-100 { color: #e6f1ff; }
+
+/* Teal accents */
+.bg-teal\/10 { background-color: rgba(100, 255, 218, 0.1); }
+.bg-teal\/5  { background-color: rgba(100, 255, 218, 0.05); }
+.bg-teal\/20 { background-color: rgba(100, 255, 218, 0.2); }
+.border-teal\/20 { border-color: rgba(100, 255, 218, 0.2); }
+.border-teal\/30 { border-color: rgba(100, 255, 218, 0.3); }
+.hover\:text-teal:hover { color: #64FFDA; }
+.hover\:bg-teal\/10:hover { background-color: rgba(100, 255, 218, 0.1); }
+.hover\:bg-teal\/20:hover { background-color: rgba(100, 255, 218, 0.2); }
+.hover\:border-teal:hover { border-color: #64FFDA; }
+.hover\:border-teal\/30:hover { border-color: rgba(100, 255, 218, 0.3); }
+
+/* Grid background pattern */
+.bg-grid {
+  background-image: 
+    linear-gradient(rgba(100, 255, 218, 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(100, 255, 218, 0.03) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+/* Blob animation */
+@keyframes blob {
+  0%   { transform: translate(0px, 0px) scale(1); }
+  33%  { transform: translate(30px, -50px) scale(1.1); }
+  66%  { transform: translate(-20px, 20px) scale(0.9); }
+  100% { transform: translate(0px, 0px) scale(1); }
+}
+.animate-blob { animation: blob 10s infinite; }
+.animation-delay-2000 { animation-delay: 2s; }
+.animation-delay-4000 { animation-delay: 4s; }
+
+/* Nav font */
+.font-mono { font-family: 'Fira Code', monospace; }
+
+/* Transition utilities */
+section { scroll-margin-top: 80px; }
+
+/* Scroll Reveal Animations */
+.reveal-element {
+  transition: opacity 1s cubic-bezier(0.2, 0.8, 0.2, 1), transform 1s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.reveal-hidden {
+  opacity: 0;
+  transform: translateY(30px);
+}
+.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
