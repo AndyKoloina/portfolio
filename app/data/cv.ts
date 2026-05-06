@@ -2,7 +2,7 @@
 export const cvData = {
   profile: {
     name: "Andy Ranaivo",
-    title: "Data Scientist & Développeur Frontend",
+    title: "Data Scientist & Développeur fullstack JS",
     shortBio: "Data Scientist et Développeur Javascript passionné. Je conçois des modèles prédictifs complexes et crée des interfaces web hautement performantes pour les rendre accessibles.",
     bio: "Fort de plus de 10 ans d'expérience auprès de clients internationaux, je possède une double expertise singulière. D'une part, j'évolue dans l'ingénierie des données et l'Intelligence Artificielle (Machine Learning, Vue d'ensemble des données, Modèles prédictifs). D'autre part, mon solide bagage en tant que Lead Développeur Frontend (Vue.js, Nuxt/Next, ReactJS) me permet de construire des architectures web robustes de bout en bout. Je transforme la donnée en intelligence, puis la restitue au travers d'interfaces UI/UX dynamiques et innovantes.",
     email: "andyranaivo22@gmail.com",
