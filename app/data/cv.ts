@@ -15,8 +15,8 @@ export const cvData = {
     {
       title: "Hubicus — Groupe BVA",
       client: "Éditeur de logiciels français",
-      description: "Refonte et modernisation SSR avec Nuxt 3, module d'automatisation de workflows et tests E2E Cypress pour la plateforme Quality Monitoring.",
-      stack: ["Nuxt 3", "Vue 3", "Pinia", "Cypress", "Symfony 7", "Docker"],
+      description: "Refonte et modernisation de l'application HQM avec React/node, module d'automatisation de workflows et tests E2E Cypress pour la plateforme Quality Monitoring.",
+      stack: ["React", "node", "typescript", "Cypress", "mysql", "Docker","redis"],
       link: "https://www.hubicus.com/",
       image: "/img/hubicus.png",
       isMobile: false
@@ -71,13 +71,13 @@ export const cvData = {
     {
       company: "NOVITY MADAGASCAR",
       period: "Octobre 2021 – Aujourd'hui",
-      role: "DEVELOPPEUR FRONTEND SENIOR",
-      details: "Refonte de l'application HQM (architecture SSR, Nuxt 3). Conception de formulaires dynamiques, automatisation de processus métiers. Pilotage de la migration Vue 2 vers Vue 3, gestion d'état Pinia. Implémentation tests E2E Cypress. Collaboration Agile Scrum."
+      role: "DEVELOPPEUR FULLSTACK SENIOR",
+      details: "Refonte de l'application HQM . Conception de formulaires dynamiques, automatisation de processus métiers. Pilotage de la migration legacy PHP vers node/react. Implémentation tests E2E Cypress. Collaboration Agile Scrum."
     },
     {
       company: "BOCASAY MAURITIUS",
       period: "Mars 2020 – Septembre 2021",
-      role: "DEVELOPPEUR FRONTEND SENIOR",
+      role: "DEVELOPPEUR MOBILE",
       details: "Refonte de l'application mobile PSS. Intégration pixel-perfect des maquettes graphiques E-commerce, suivi des performances via Google Analytics tags."
     },
     {
