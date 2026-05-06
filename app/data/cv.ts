@@ -25,7 +25,7 @@ export const cvData = {
       title: "Private Sport Shop",
       client: "Bocasay / PSS",
       description: "Refonte et évolution de l'application mobile E-commerce, intégration UI/UX pixel-perfect et optimisation des parcours d'achat.",
-      stack: ["React Native", "Symfony 5", "Google Analytics"],
+      stack: ["React Native", "Symfony 5", "Google Analytics","Mysql","docker","firebase"],
       link: "https://www.privatesportshop.fr/",
       image: "/img/pss.png",
       isMobile: false
