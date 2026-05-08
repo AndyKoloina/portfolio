@@ -72,7 +72,7 @@ export const cvData = {
       company: "NOVITY MADAGASCAR",
       period: "Octobre 2021 – Aujourd'hui",
       role: "DEVELOPPEUR FULLSTACK SENIOR",
-      details: "Refonte de l'application HQM . Conception de formulaires dynamiques, automatisation de processus métiers. Pilotage de la migration legacy PHP vers node/react. Implémentation tests E2E Cypress. Collaboration Agile Scrum."
+      details: "Refonte de l'application HQM . Conception de formulaires dynamiques, automatisation de processus métiers. Pilotage de la migration Symfony 2 vers node/react. Implémentation tests E2E Cypress. Collaboration Agile Scrum."
     },
     {
       company: "BOCASAY MAURITIUS",
