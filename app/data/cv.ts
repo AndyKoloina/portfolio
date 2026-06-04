@@ -1,10 +1,20 @@
 // data/cv.ts
+interface Experience {
+  company: string
+  period: string
+  role: string
+  details: string
+  stack?: string[]
+  responsibilities?: string[]
+  current?: boolean
+}
+
 export const cvData = {
   profile: {
     name: "Andy Ranaivo",
-    title: "Data Scientist & Développeur fullstack JS",
-    shortBio: "Data Scientist et Développeur Javascript passionné. Je conçois des modèles prédictifs complexes et crée des interfaces web hautement performantes pour les rendre accessibles.",
-    bio: "Fort de plus de 10 ans d'expérience auprès de clients internationaux, je possède une double expertise singulière. D'une part, j'évolue dans l'ingénierie des données et l'Intelligence Artificielle (Machine Learning, Vue d'ensemble des données, Modèles prédictifs). D'autre part, mon solide bagage en tant que Lead Développeur Frontend (Vue.js, Nuxt/Next, ReactJS) me permet de construire des architectures web robustes de bout en bout. Je transforme la donnée en intelligence, puis la restitue au travers d'interfaces UI/UX dynamiques et innovantes.",
+    title: "Fullstack Node/React Developer · Frontend Expert · Data Scientist",
+    shortBio: "Fullstack Node/React Developer, Frontend Expert and Data Scientist. I build robust web architectures, high-performance interfaces and predictive models that turn raw data into actionable intelligence.",
+    bio: "With over 10 years of experience working with international clients, I combine three complementary areas of expertise. As a fullstack developer, I build solid Node.js/Express APIs and end-to-end React/TypeScript interfaces. My background as a frontend lead allowed me to deliver high-traffic projects (Oreo, Cadbury, Klépierre) using Vue.js, Nuxt and Next.js. Finally, my Master's in AI & Data Engineering (INSI 2025) enables me to design predictive models (Machine Learning, TensorFlow) and surface insights through actionable dashboards. This triple expertise lets me drive a project from raw data all the way to the interface that makes it useful.",
     email: "andyranaivo22@gmail.com",
     phone: "+261 38 59 928 53",
     location: "Antananarivo, Madagascar",
@@ -70,38 +80,48 @@ export const cvData = {
   experiences: [
     {
       company: "NOVITY MADAGASCAR",
-      period: "Octobre 2021 – Aujourd'hui",
-      role: "DEVELOPPEUR FULLSTACK SENIOR",
-      details: "Conception et migration progressive de l'application HQM(Hubicus Quality Monitoring) vers node/react. Implémentation tests E2E Cypress. Collaboration Agile Scrum."
+      period: "October 2021 – Present",
+      role: "SENIOR FULLSTACK NODE/REACT DEVELOPER",
+      details: "Fullstack design and development of the HQM application (Hubicus Quality Monitoring) — Node.js APIs, React/TypeScript interfaces, automated testing and continuous deployment.",
+      responsibilities: [
+        "Architecture and progressive migration of the HQM app to a Node.js/Express + React/TypeScript stack",
+        "RESTful API development, data flow management (MySQL, Redis) and Docker containerization",
+        "React interface development — reusable components, custom hooks, Redux state management",
+        "E2E testing with Cypress and unit testing with Jest, integrated into the CI pipeline",
+        "Code review, refactoring and continuous performance optimization",
+        "Agile/Scrum collaboration within an international team (Groupe BVA, France)"
+      ],
+      stack: ["Node.js", "React", "TypeScript", "Express", "MySQL", "Redis", "Docker", "Cypress"],
+      current: true
     },
     {
       company: "BOCASAY MAURITIUS",
-      period: "Mars 2020 – Septembre 2021",
-      role: "DEVELOPPEUR MOBILE",
-      details: "Refonte de l'application mobile PSS. Intégration pixel-perfect des maquettes graphiques E-commerce, suivi des performances via Google Analytics tags."
+      period: "March 2020 – September 2021",
+      role: "MOBILE DEVELOPER",
+      details: "Rebuilt the PSS mobile app. Pixel-perfect integration of e-commerce UI designs, performance tracking via Google Analytics tags."
     },
     {
       company: "HANGAR WORLDWIDE MAURITIUS",
-      period: "Octobre 2016 – Février 2020",
-      role: "DÉVELOPPEUR FRONTEND / LEAD TECHNIQUE",
-      details: "Refonte, maintenance et création de sites web à fort trafic. Lead Technique Projet Pampers. Développement avancé React/TypeScript/GraphQL pour les sites Klepierre et Mondelez (Oreo, Cadbury)."
+      period: "October 2016 – February 2020",
+      role: "FRONTEND DEVELOPER / TECHNICAL LEAD",
+      details: "Revamp, maintenance and creation of high-traffic websites. Technical Lead on the Pampers project. Advanced React/TypeScript/GraphQL development for Klepierre and Mondelez brands (Oreo, Cadbury)."
     },
     {
       company: "VIVETIC MADAGASCAR",
-      period: "Février 2015 – Septembre 2016",
-      role: "DÉVELOPPEUR SI",
-      details: "Développement et maintenance d'outils de GPAO (Gestion de Production Assistée par Ordinateur)."
+      period: "February 2015 – September 2016",
+      role: "SOFTWARE DEVELOPER",
+      details: "Development and maintenance of MES (Manufacturing Execution System) tools for production management."
     }
-  ],
+  ] as Experience[],
   education: [
     {
-      degree: "MASTER 1 en Ingénierie Intelligence Artificielle et Data (I2AD)",
-      school: "INSI - Université spécialisée en Informatique et intelligence artificielle",
+      degree: "Master's in AI & Data Engineering (I2AD)",
+      school: "INSI — University specializing in Computer Science & Artificial Intelligence",
       year: "2025"
     },
     {
-      degree: "Licence en développement d'application",
-      school: "IT University – Université spécialisée en Informatique",
+      degree: "Bachelor's in Application Development",
+      school: "IT University — University specializing in Computer Science",
       year: "2015"
     }
   ],
@@ -121,8 +141,8 @@ export const cvData = {
     "Javascript", "Typescript", "Css", "Sass", "Tailwind", "NextJS", "NodeJS", "HTML5", "Nuxt 3", "REACT/REDUX", "VUEJS(2/3)", "Vuex", "Pinia", "Sitecore", "Python", "Django", "Cypress", "Jest", "Tensorflow", "PowerBI", "DataWarehouse", "Oracle", "Mysql", "PostgreSQL"
   ],
   languages: [
-    "Malgache (langue maternelle)",
-    "Français (courant)",
-    "Anglais (intermédiaire)"
+    "Malagasy (native)",
+    "French (fluent)",
+    "English (intermediate)"
   ]
 };

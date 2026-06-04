@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const skillGroups = [
   {
-    label: 'Data Science & IA',
+    label: 'Data Science & AI',
     skills: [
       { name: 'Python',       icon: 'python',       color: '3776AB' },
       { name: 'Apache Spark', icon: 'apachespark',  color: 'E25A1C' },
@@ -40,7 +40,7 @@ const skillGroups = [
     ]
   },
   {
-    label: 'Bases de données & Outils',
+    label: 'Databases & Tools',
     skills: [
       { name: 'MySQL',       icon: 'mysql',       color: '4479A1' },
       { name: 'PostgreSQL',  icon: 'postgresql',  color: '4169E1' },
@@ -56,9 +56,9 @@ const skillGroups = [
 <template>
   <div>
     <div class="mb-12">
-      <p class="font-mono text-sm mb-2" style="color:#64FFDA;">02. Compétences</p>
+      <p class="font-mono text-sm mb-2" style="color:#64FFDA;">02. Skills</p>
       <h2 class="text-3xl font-bold" style="color:#ccd6f6;">
-        Technologies que j'utilise
+        Technologies I Use
       </h2>
       <div class="mt-3 w-16 h-0.5" style="background-color:#64FFDA;"></div>
     </div>

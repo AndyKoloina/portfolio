@@ -49,29 +49,29 @@ onMounted(() => {
         <button @click="scrollToSection('about')"
           :style="activeSection === 'about' ? 'color:#64FFDA' : 'color:#8892b0'"
           class="hover:text-teal transition-colors flex items-center gap-1.5">
-          <span style="color:#64FFDA; font-size:11px;">01.</span> À propos
+          <span style="color:#64FFDA; font-size:11px;">01.</span> About
         </button>
         <button @click="scrollToSection('skills')"
           :style="activeSection === 'skills' ? 'color:#64FFDA' : 'color:#8892b0'"
           class="transition-colors flex items-center gap-1.5">
-          <span style="color:#64FFDA; font-size:11px;">02.</span> Compétences
+          <span style="color:#64FFDA; font-size:11px;">02.</span> Skills
         </button>
         <button @click="scrollToSection('experience')"
           :style="activeSection === 'experience' ? 'color:#64FFDA' : 'color:#8892b0'"
           class="transition-colors flex items-center gap-1.5">
-          <span style="color:#64FFDA; font-size:11px;">03.</span> Expérience
+          <span style="color:#64FFDA; font-size:11px;">03.</span> Experience
         </button>
         <button @click="scrollToSection('projets')"
           :style="activeSection === 'projets' ? 'color:#64FFDA' : 'color:#8892b0'"
           class="transition-colors flex items-center gap-1.5">
-          <span style="color:#64FFDA; font-size:11px;">04.</span> Projets
+          <span style="color:#64FFDA; font-size:11px;">04.</span> Projects
         </button>
-        <a href="/ANDY_CV.pdf" download target="_blank"
+        <a href="/cv_ranaivo_andy_2026.pdf" download target="_blank"
           class="px-4 py-2 rounded font-mono text-sm transition-colors ml-4"
           style="border:1px solid #64FFDA; color:#64FFDA;"
           onmouseover="this.style.background='rgba(100,255,218,0.1)'"
           onmouseout="this.style.background='transparent'">
-          Télécharger CV
+          Download CV
         </a>
       </div>
 
@@ -92,24 +92,24 @@ onMounted(() => {
       <div class="relative h-full flex flex-col items-center justify-center gap-8 font-mono p-8 text-center">
         <button @click="handleNavClick('about')" class="text-3xl flex flex-col items-center gap-1" :style="activeSection === 'about' ? 'color:#64FFDA' : 'color:#8892b0'">
           <span class="text-teal text-[11px] uppercase tracking-widest opacity-70">01.</span>
-          <span>À propos</span>
+          <span>About</span>
         </button>
         <button @click="handleNavClick('skills')" class="text-3xl flex flex-col items-center gap-1" :style="activeSection === 'skills' ? 'color:#64FFDA' : 'color:#8892b0'">
           <span class="text-teal text-[11px] uppercase tracking-widest opacity-70">02.</span>
-          <span>Compétences</span>
+          <span>Skills</span>
         </button>
         <button @click="handleNavClick('experience')" class="text-3xl flex flex-col items-center gap-1" :style="activeSection === 'experience' ? 'color:#64FFDA' : 'color:#8892b0'">
           <span class="text-teal text-[11px] uppercase tracking-widest opacity-70">03.</span>
-          <span>Expérience</span>
+          <span>Experience</span>
         </button>
         <button @click="handleNavClick('projets')" class="text-3xl flex flex-col items-center gap-1" :style="activeSection === 'projets' ? 'color:#64FFDA' : 'color:#8892b0'">
           <span class="text-teal text-[11px] uppercase tracking-widest opacity-70">04.</span>
-          <span>Projets</span>
+          <span>Projects</span>
         </button>
-        <a href="/ANDY_CV.pdf" download target="_blank"
+        <a href="/cv_ranaivo_andy_2026.pdf" download target="_blank"
           class="mt-8 px-12 py-5 rounded font-mono text-xl transition-colors"
           style="border:1px solid #64FFDA; color:#64FFDA;">
-          Télécharger CV
+          Download CV
         </a>
       </div>
     </div>
