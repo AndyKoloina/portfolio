@@ -8,7 +8,7 @@ import { GraduationCap, Award, Briefcase } from 'lucide-vue-next'
     <div class="space-y-12">
       <h2 class="text-3xl font-black italic flex items-center gap-3">
         <Briefcase class="text-cyan-400 drop-shadow-[0_0_8px_rgba(34,211,238,0.6)]" /> 
-        <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-violet-500">PARCOURS PROFESSIONNEL</span>
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-violet-500">PROFESSIONAL EXPERIENCE</span>
       </h2>
       <div class="border-l border-cyan-500/30 ml-4 space-y-12">
         <div v-for="exp in cvData.experiences" :key="exp.company" class="relative pl-10 group">
@@ -28,7 +28,7 @@ import { GraduationCap, Award, Briefcase } from 'lucide-vue-next'
 
     <div class="grid md:grid-cols-2 gap-12 pt-10 border-t border-white/5">
       <div class="space-y-6">
-        <h3 class="text-xl font-bold flex items-center gap-2"><GraduationCap class="text-violet-500 drop-shadow-[0_0_5px_rgba(139,92,246,0.6)]"/> FORMATION</h3>
+        <h3 class="text-xl font-bold flex items-center gap-2"><GraduationCap class="text-violet-500 drop-shadow-[0_0_5px_rgba(139,92,246,0.6)]"/> EDUCATION</h3>
         <div v-for="edu in cvData.education" :key="edu.degree" class="space-y-1 bg-white/5 p-4 rounded-xl border border-white/5 hover:border-violet-500/30 transition-colors">
           <p class="text-white font-medium">{{ edu.degree }}</p>
           <p class="text-gray-500 text-sm">{{ edu.school }} — <span class="text-violet-400">{{ edu.year }}</span></p>
@@ -49,7 +49,7 @@ import { GraduationCap, Award, Briefcase } from 'lucide-vue-next'
     <div class="grid md:grid-cols-2 gap-12 pt-10 border-t border-white/5 relative">
       <div class="absolute -top-32 right-0 w-64 h-64 bg-cyan-500/10 rounded-full blur-[100px] pointer-events-none"></div>
       <div class="space-y-6">
-        <h3 class="text-xl font-bold flex items-center gap-2 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-violet-500">COMPÉTENCES</h3>
+        <h3 class="text-xl font-bold flex items-center gap-2 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-violet-500">SKILLS</h3>
         <div class="flex flex-wrap gap-2">
           <span v-for="skill in cvData.skills" :key="skill" class="px-3 py-1.5 bg-cyan-950/30 border border-cyan-500/20 rounded-lg text-sm text-cyan-200 hover:bg-cyan-500/20 hover:border-cyan-400 transition-all cursor-default shadow-[0_0_10px_rgba(34,211,238,0.05)]">
             {{ skill }}
@@ -57,7 +57,7 @@ import { GraduationCap, Award, Briefcase } from 'lucide-vue-next'
         </div>
       </div>
       <div class="space-y-6">
-        <h3 class="text-xl font-bold flex items-center gap-2 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-violet-500">LANGUES</h3>
+        <h3 class="text-xl font-bold flex items-center gap-2 text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-violet-500">LANGUAGES</h3>
         <ul class="space-y-3">
           <li v-for="lang in cvData.languages" :key="lang" class="text-gray-300 flex items-center gap-3">
             <span class="w-1 h-3 rounded-full bg-gradient-to-b from-cyan-400 to-violet-500"></span>
