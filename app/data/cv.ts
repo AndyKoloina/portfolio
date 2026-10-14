@@ -14,7 +14,7 @@ export const cvData = {
     name: "Andy Ranaivo",
     title: "Senior Fullstack Developer · Frontend Expert · Data Scientist",
     shortBio: "Senior Fullstack Developer with 10+ years of experience, specializing in the modern JavaScript ecosystem. I transform business requirements into scalable, high-performance technical architectures.",
-    bio: "With over 10 years of experience working with international clients, I combine three complementary areas of expertise. As a fullstack developer, I architect Node.js/Express APIs and end-to-end React/TypeScript applications — including AI-powered pipelines (LLM/Mistral, RabbitMQ) for large-scale data processing. My background as a frontend lead allowed me to deliver high-traffic projects (Oreo, Cadbury, Klépierre) with a strong focus on design systems, accessibility and performance. Finally, my Master's in AI & Data Engineering (INSI 2025) enables me to design predictive models (Machine Learning, TensorFlow) and surface insights through actionable dashboards. This triple expertise lets me drive a project from raw data all the way to the interface that makes it useful.",
+    bio: "With over 10 years of experience working with international clients, I combine three complementary areas of expertise. As a fullstack developer, I architect PHP/Symfony REST APIs and Vue.js applications — including AI-powered pipelines (LLM/Mistral, RabbitMQ) for large-scale data processing. My background as a frontend lead allowed me to deliver high-traffic projects (Oreo, Cadbury, Klépierre) with a strong focus on design systems, accessibility and performance. Finally, my Master's in AI & Data Engineering (INSI 2025) enables me to design predictive models (Machine Learning, TensorFlow) and surface insights through actionable dashboards. This triple expertise lets me drive a project from raw data all the way to the interface that makes it useful.",
     email: "andyranaivo22@gmail.com",
     phone: "+261 38 59 928 53",
     location: "Antananarivo, Madagascar",
@@ -25,8 +25,8 @@ export const cvData = {
     {
       title: "Hubicus — Groupe BVA",
       client: "French Software Publisher",
-      description: "Redesign and modernization of the HQM application with React/Node, workflow automation module and E2E Cypress tests for the Quality Monitoring platform.",
-      stack: ["React", "Node.js", "TypeScript", "Cypress", "MySQL", "Docker", "Redis"],
+      description: "Multichannel quality monitoring platform for contact centers: Symfony REST APIs, PHP 8 / Symfony 7 migration, Vue 3 / Pinia frontend and an AI evaluation pipeline (speech-to-text + Mistral LLM) orchestrated via RabbitMQ.",
+      stack: ["Symfony", "PHP 8", "Vue.js 3", "Pinia", "RabbitMQ", "MySQL", "Redis", "Docker"],
       link: "https://www.hubicus.com/",
       image: "/img/hubicus.png",
       isMobile: false
@@ -81,26 +81,17 @@ export const cvData = {
     {
       company: "NOVITY MADAGASCAR",
       period: "October 2021 – Present",
-      role: "FULL-STACK DEVELOPER (Node.js / React TypeScript)",
-      details: "Design and development of the HQM application (Hubicus Quality Monitoring) — React/TypeScript interfaces, Node.js APIs, AI evaluation pipeline and continuous deployment.",
+      role: "FULL-STACK DEVELOPER (PHP / Symfony / Vue.js)",
+      details: "Multichannel customer interaction quality monitoring platform (calls, chats, e-mails and other channels) for contact centers, on behalf of a software publisher client.",
       responsibilities: [
-        "Integrated Figma mockups into interactive, responsive React components aligned with the HQM design system.",
-        "Built a documented design system with Storybook, standardizing React components for consistency and reuse across HQM.",
-        "Designed a dynamic form engine to configure custom evaluation grids per channel (calls, chats).",
-        "Developed a multimedia workspace with a synchronized interface (React / Redux Toolkit), custom audio player and integrated chat history.",
-        "Implemented draft management via Redis with auto-save and form caching to prevent data loss.",
-        "Designed and built REST APIs (Node.js / Express) for evaluation submission, retrieval and management — with validation, error handling and route security — enabling regression-free integration that standardized the evaluation process and significantly improved supervisor ergonomics.",
-        "Integrated an AI evaluation pipeline combining speech-to-text and NLP/LLM (Mistral) via Node.js to analyze interactions and auto-fill scoring grids.",
-        "Set up asynchronous orchestration (RabbitMQ) with a message-oriented architecture to delegate audio transcription and semantic analysis to background workers — drastically reducing analysis time and enabling ingestion of thousands of simultaneous calls and chats without impacting HQM performance.",
-        "Built dynamic, interactive dashboards (Chart.js / ECharts) to visualize KPIs directly within HQM.",
-        "Developed optimized Node.js APIs to filter and cross-reference large data volumes (evaluations by team, supervisor, agent, period).",
-        "Set up comparative metrics between manual and AI evaluations to measure productivity gains, providing real-time team performance views and a concrete ROI demonstration for stakeholders.",
-        "Investigated and resolved critical production bugs across the evaluation module, AI pipeline and dashboards — reducing incidents and maintaining high availability for business teams.",
-        "Implemented end-to-end tests with Cypress for critical user flows (evaluation submission, AI scoring) to prevent regressions during deployments.",
-        "Integrated an interactive user guide (Shepherd.js) with step-by-step tours covering module descriptions, button roles and contextual navigation — enabling autonomous onboarding and reducing recurring support questions.",
-        "Collaborated with DevOps to improve Docker configurations (Dockerfiles, image adjustments, build pipeline optimization), reducing build times and stabilizing dev and production environments."
+        "Designed and developed REST APIs covering multiple platform features (evaluations, users, reporting, among others), with route security and standardized business processes.",
+        "Led technical migrations from PHP 5 → PHP 7 → PHP 8 and Symfony 5 → Symfony 7, modernizing the backend architecture and durably reducing technical debt.",
+        "Integrated an AI evaluation pipeline (speech-to-text + Mistral LLM) orchestrated asynchronously via RabbitMQ and cached with Redis, ingesting large volumes of calls and chats without impacting performance.",
+        "Migrated the frontend from Vue 2 / Vuex to Vue 3 / Pinia, improving maintainability, reactivity and interface performance.",
+        "Resolved complex performance-related bugs and set up cron jobs to automate the platform's recurring processing tasks.",
+        "Implemented functional tests with Behat, worked in an agile (Scrum) setting and collaborated closely with the DevOps team on Docker configurations."
       ],
-      stack: ["React", "TypeScript", "Redux Toolkit", "Node.js", "Express", "Prisma", "RabbitMQ", "Redis", "Docker", "LLM/Mistral", "GitLab CI", "Jest/Vitest", "Cypress", "Storybook", "Shepherd.js"],
+      stack: ["PHP 7/8", "Symfony 5/7", "Vue.js 2 & 3", "Vuex", "Pinia", "Behat", "LLM/Mistral", "RabbitMQ", "MySQL", "Redis", "Docker", "Git", "GitLab CI", "Scrum/Jira"],
       current: true
     },
     {
