@@ -66,7 +66,7 @@ onMounted(() => {
           class="transition-colors flex items-center gap-1.5">
           <span style="color:#64FFDA; font-size:11px;">04.</span> Projects
         </button>
-        <a href="/CV_Andy_Ranaivo.pdf" download target="_blank"
+        <a href="/cv_ranaivo_andy.pdf" download target="_blank"
           class="px-4 py-2 rounded font-mono text-sm transition-colors ml-4"
           style="border:1px solid #64FFDA; color:#64FFDA;"
           onmouseover="this.style.background='rgba(100,255,218,0.1)'"
@@ -106,7 +106,7 @@ onMounted(() => {
           <span class="text-teal text-[11px] uppercase tracking-widest opacity-70">04.</span>
           <span>Projects</span>
         </button>
-        <a href="/CV_Andy_Ranaivo.pdf" download target="_blank"
+        <a href="/cv_ranaivo_andy.pdf" download target="_blank"
           class="mt-8 px-12 py-5 rounded font-mono text-xl transition-colors"
           style="border:1px solid #64FFDA; color:#64FFDA;">
           Download CV

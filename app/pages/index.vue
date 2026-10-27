@@ -17,7 +17,7 @@ onMounted(() => {
   if (typedElement.value) {
     new Typed(typedElement.value, {
       strings: [
-        'Fullstack PHP / Symfony / Vue.js Developer.',
+        'Fullstack Node.js / React Developer.',
         'Frontend Expert & Technical Lead.',
         'Data Scientist & Applied AI.'
       ],
@@ -56,7 +56,7 @@ useHead({
         <button @click="scrollToSection('projets')" class="group flex items-center gap-3 px-5 md:px-6 py-3 border rounded font-mono text-xs md:text-sm transition-all duration-200" style="border-color:#64FFDA; color:#64FFDA;" onmouseover="this.style.backgroundColor='rgba(100,255,218,0.1)'" onmouseout="this.style.backgroundColor='transparent'">
           View my work <ArrowRight class="w-4 h-4 group-hover:translate-x-1 transition-transform" />
         </button>
-        <a href="/CV_Andy_Ranaivo.pdf" download target="_blank" class="flex items-center gap-3 px-5 md:px-6 py-3 border rounded font-mono text-xs md:text-sm transition-all duration-200" style="border-color:rgba(100,255,218,0.3); background-color:rgba(100,255,218,0.1); color:#64FFDA;" onmouseover="this.style.backgroundColor='rgba(100,255,218,0.2)'" onmouseout="this.style.backgroundColor='rgba(100,255,218,0.1)'">
+        <a href="/cv_ranaivo_andy.pdf" download target="_blank" class="flex items-center gap-3 px-5 md:px-6 py-3 border rounded font-mono text-xs md:text-sm transition-all duration-200" style="border-color:rgba(100,255,218,0.3); background-color:rgba(100,255,218,0.1); color:#64FFDA;" onmouseover="this.style.backgroundColor='rgba(100,255,218,0.2)'" onmouseout="this.style.backgroundColor='rgba(100,255,218,0.1)'">
           <Download class="w-4 h-4" /> Download CV
         </a>
       </div>
